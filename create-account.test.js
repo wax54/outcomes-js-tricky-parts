@@ -69,7 +69,7 @@ describe("createAccount", function() {
 
   describe("changePin", function() {
     it("returns 'Invalid PIN.' if the PIN doesn't match", function() {
-      expect(bigAccount.withdraw("nope", 100)).toBe("Invalid PIN.");
+      expect(bigAccount.changePin("nope", 100)).toBe("Invalid PIN.");
     });
 
     it("changes the PIN with a success message if the PIN matches", function() {
